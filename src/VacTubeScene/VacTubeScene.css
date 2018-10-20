@@ -1,0 +1,116 @@
+body.VacTubeScene__body {
+  background: url("./bg.png") no-repeat;
+  background-size: cover;
+}
+
+.VacTubeScene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.VacTubeScene-tube-image {
+  background: url("./vac_tupe.png") no-repeat;
+  width: 806px;
+  height: 476px;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  margin-left: -364px;
+  margin-top: -191px;
+  top: 50%;
+
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 25s;
+}
+
+.VacTubeScene-description {
+  color: #333333;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  line-height: 45px;
+  top: -68px;
+  left: 6px;
+}
+
+.VacTubeScene-price {
+  color: #db2c2c;
+  font-size: 70px;
+  position: relative;
+  top: 22px;
+}
+
+.VacTubeScene-bottom {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 190px;
+  height: 110px;
+}
+
+.VacTubeScene-bottom-text {
+  color: #333333;
+  font-size: 24px;
+  line-height: 17px;
+  border-bottom: 1px dotted transparent;
+  cursor: pointer;
+  position: absolute;
+  bottom: 18px;
+  z-index: 2;
+  transition: bottom 500ms ease-in-out;
+  white-space: nowrap;
+  left: 50%;
+  margin-left: -210px;
+}
+
+.VacTubeScene-bottom-text:hover,
+.VacTubeScene-bottom:hover .VacTubeScene-bottom-text {
+  color: #0055ff;
+  border-bottom: 1px dotted #0055ff;
+}
+
+.VacTubeScene-bottom-image {
+  position: absolute;
+  bottom: -67px;
+  transition: bottom 300ms ease-in-out;
+  background: url("./needle.png") no-repeat;
+  width: 15px;
+  height: 67px;
+  z-index: 1;
+  left: 50%;
+  margin-left: -139px;
+}
+
+.VacTubeScene-bottom:hover .VacTubeScene-bottom-image {
+  bottom: 0;
+}
+
+.VacTubeScene-bottom:hover .VacTubeScene-bottom-text {
+  bottom: 67px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0%,0%);
+  }
+  25% {
+    transform: translate(1%,5%);
+  }
+  50% {
+    transform: translate(5%,1%);
+  }
+  75% {
+    transform: translate(0%,4%);
+  }
+  100% {
+    transform: translate(0%,0%);
+  }
+}

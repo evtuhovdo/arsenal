@@ -1,0 +1,91 @@
+.PersonPaginator {
+    display: flex;
+    flex-direction: column;
+}
+
+.PersonPaginator__first_row {
+    display: flex;
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 13px;
+}
+
+.PersonPaginator__name {
+    font-size: 22px;
+    flex: 1;
+}
+
+.PersonPaginator__paging {
+    display: flex;
+}
+
+.PersonPaginator__page_index {
+    font-size: 22px;
+    width: 40px;
+    text-align: center;
+}
+
+.PersonPaginator__chevron_left {
+    width: 40px;
+    text-align: left;
+    font-size: 22px;
+    user-select: none;
+    color: #c2c2c2;
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear, color 0.2s linear;
+}
+
+.PersonPaginator__chevron_right {
+    width: 40px;
+    text-align: right;
+    font-size: 22px;
+    user-select: none;
+    color: #c2c2c2;
+    position: relative;
+    top: 0;
+    transition: top 0.2s linear, color 0.2s linear;
+}
+
+.PersonPaginator__chevron--enabled:active {
+    top: 4px;
+}
+
+.PersonPaginator__chevron--enabled {
+    cursor: pointer;
+    color: #3E60DA;
+}
+
+.PersonPaginator__contact {
+    font-size: 22px;
+    padding-top: 18px;
+}
+
+.PersonPaginator__first_row__bottom {
+    width: 20%;
+    height: 3px;
+    background: #3E60DA;
+    position: relative;
+    top: -2px;
+    left: 0;
+    transition: left 0.2s ease-in-out;
+}
+
+.PersonPaginator__first_row__bottom.first {
+    left: 0;
+}
+
+.PersonPaginator__first_row__bottom.second {
+    left: 20%;
+}
+
+.PersonPaginator__first_row__bottom.third {
+    left: 40%;
+}
+
+.PersonPaginator__first_row__bottom.four {
+    left: 60%;
+}
+
+.PersonPaginator__first_row__bottom.five {
+    left: 80%;
+}

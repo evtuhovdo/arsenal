@@ -1,0 +1,197 @@
+.AdvantagesScene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 159px);
+    overflow: hidden;
+}
+
+.AdvantagesScene > div {
+    animation-name: floating;
+    -webkit-animation-name: floating;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+.AdvantagesScene__plan_0 {
+    background: url("plan/0.png");
+    width: 377px;
+    height: 428px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -268px;
+    margin-left: -94px;
+    animation-duration: 30s;
+}
+
+.AdvantagesScene__plan_1 {
+    background: url("plan/1.png");
+    width: 332px;
+    height: 272px;
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    animation-duration: 35s;
+}
+
+.AdvantagesScene__plan_2 {
+    background: url("plan/2.png");
+    width: 393px;
+    height: 836px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation-duration: 24s;
+}
+
+.AdvantagesScene__plan_3 {
+    background: url("plan/3.png");
+    width: 951px;
+    height: 456px;
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    animation-duration: 25s;
+}
+
+.AdvantagesScene__plan_4 {
+    background: url("plan/4.png");
+    width: 376px;
+    height: 292px;
+    position: absolute;
+    right: 0;
+    bottom: 13%;
+    animation-duration: 22s;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0%,0%);
+    }
+    25% {
+        transform: translate(5%,15%);
+    }
+    50% {
+        transform: translate(10%,5%);
+    }
+    75% {
+        transform: translate(0%,15%);
+    }
+    100% {
+        transform: translate(0%,0%);
+    }
+}
+
+.AdvantagesScene__paging {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 154px;
+}
+
+.AdvantagesScene__paging__container {
+    display: flex;
+    z-index: 250;
+}
+
+.AdvantagesScene__paging__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #DCDCDC;
+    margin: 10px 5px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.AdvantagesScene__paging__dot.AdvantagesScene__paging__dot--active {
+    background: #D44139;
+    color: #fff;
+    content: "(";
+    width: 10px;
+    height: 14px;
+    border-radius: 24px;
+    margin: 8px 5px;
+}
+
+.AdvantagesScene__icon {
+    position: absolute;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background: none;
+}
+
+.AdvantagesScene__icon__icon-1 {
+    background: url("./icons/1.png");
+    width: 205px;
+    height: 220px;
+    left: 96px;
+    top: 107px;
+}
+
+.AdvantagesScene__icon__icon-2 {
+    background: url("./icons/2.png");
+    width: 201px;
+    height: 211px;
+    left: 105px;
+    top: 110px;
+}
+
+.AdvantagesScene__icon__icon-3 {
+    background: url("./icons/3.png");
+    width: 222px;
+    height: 224px;
+    left: 85px;
+    top: 100px;
+}
+
+.AdvantagesScene__icon__icon-4 {
+    background: url("./icons/4.png");
+    width: 265px;
+    height: 163px;
+    left: 55px;
+    top: 130px;
+}
+
+.AdvantagesScene__icon__icon-5 {
+    background: url("./icons/5.png");
+    width: 270px;
+    height: 227px;
+    left: 65px;
+    top: 90px;
+}
+
+.AdvantagesScene__headline {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -18px;
+    left: -130px;
+}
+
+.AdvantagesScene__subline {
+    font-size: 30px;
+    position: absolute;
+    top: 19px;
+    left: -40px;
+    font-style: italic;
+}
+
+.AdvantagesScene__description {
+    position: absolute;
+    bottom: 174px;
+    left: calc(50% - 0px);
+    width: 100%;
+    padding-left: 154px;
+}
+
+.AdvantagesScene__description__container {
+    display: flex;
+    justify-content: center;
+}

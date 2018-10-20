@@ -1,0 +1,156 @@
+.DiscountScene {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  position: relative;
+}
+
+.DiscountScene__girl-image {
+  background: url("./girl.png") no-repeat;
+  width: 370px;
+  height: 876px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.DiscountScene__main {
+  text-align: left;
+  margin-left: 350px;
+  margin-top: 233px;
+}
+
+.DiscountScene__header {
+  display: flex;
+  align-items: center;
+}
+
+.DiscountScene__header__text {
+  font-size: 40px;
+  margin: 0;
+}
+
+.DiscountScene__header__images {
+  background: url("./icons.png") no-repeat;
+  width: 207px;
+  height: 33px;
+  margin-left: 32px;
+}
+
+
+.DiscountScene__text {
+  font-size: 22px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.DiscountScene__form {
+  display: flex;
+  margin-top: 29px;
+  margin-left: 2px;
+}
+
+.DiscountScene__input {
+  position: relative;
+  width: 305px;
+  transition: background 0.2s ease-in-out;
+  background: transparent no-repeat 300px 7px;
+}
+
+.DiscountScene__input--valid {
+  background: url("./ok_mark.png") no-repeat 265px 7px;
+}
+
+.DiscountScene__input input {
+  font-size: 29px;
+  padding-bottom: 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  color: #395ce2;
+  border-bottom: 2px solid #CBD9F7;
+  background-color: transparent;
+  font-style: italic;
+  padding-right: 50px;
+}
+
+.DiscountScene__input input:focus {
+  outline: none;
+}
+
+.DiscountScene__input label {
+  color: #babfc2;
+  font-size: 31px;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  font-style: italic;
+  left: -3px;
+  top: 3px;
+}
+
+.DiscountScene__input input:focus ~ label,
+.DiscountScene__input input:valid ~ label {
+  top: 55px;
+  font-size: 19px;
+}
+
+.DiscountScene__input span {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.DiscountScene__input span:before,
+.DiscountScene__input span:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #3E60DA;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.DiscountScene__input span:before {
+  left: 50%;
+}
+.DiscountScene__input span:after {
+  right: 50%;
+}
+
+.DiscountScene__input input:focus ~ span:before,
+.DiscountScene__input input:focus ~ span:after {
+  width: 50%;
+}
+
+.DiscountScene__form__submit_button {
+  font-size: 34px;
+  margin-left: 20px;
+  font-style: italic;
+  color: #c2c2c2;
+  cursor: not-allowed;
+}
+
+.DiscountScene__form__submit_button--enabled {
+  cursor: pointer;
+  color: #0055ff;
+  border-bottom: 1px dotted #0055ff;
+  transition: top 0.2s linear, color 0.2s linear;
+  position: relative;
+  top: 0;
+  user-select: none;
+}
+
+.DiscountScene__form__submit_button--enabled:active {
+  top: 4px;
+}
+
+.DiscountScene__PersonPaginator {
+  margin-top: 68px;
+  width: 410px;
+}

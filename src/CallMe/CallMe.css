@@ -1,0 +1,220 @@
+.CallMe-root {
+    position: relative;
+}
+
+.CallMe-link {
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #0055ff;
+    border: 1px solid #c8d9fa;
+    font-size: 18px;
+    margin: 0 26px;
+    padding: 11px 24px;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.CallMe-link:not(.CallMe-link--active):hover {
+    background-color: #0055ff;
+    color: #fff;
+}
+
+.CallMe-link--active {
+    border: 1px solid transparent;
+    color: #babfc2;
+}
+
+.CallMe-white-popup {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 50px 0px rgba(29, 34, 38, 0.05), 0px 0px 15px 0px rgba(29, 34, 38, 0.05);
+    width: 230px;
+    height: 200px;
+    border-radius: 25px;
+    background-size: contain;
+    position: absolute;
+    left: 6px;
+    top: 56px;
+    z-index: 122;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.CallMe-white-popup:before {
+    content: '';
+    background: url("./popup_nipple.svg");
+    width: 64px;
+    height: 62px;
+    position: absolute;
+    top: -58px;
+    left: 83px;
+}
+
+.CallMe-white-popup-input {
+    position: relative;
+    margin-bottom: 30px;
+    width: 190px;
+}
+
+.CallMe-white-popup-input input {
+    font-size: 16px;
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    color: #333333;
+    border-bottom: 2px solid #CBD9F7;
+    background-color: transparent;
+}
+
+.CallMe-white-popup-input input:focus {
+    outline: none;
+}
+
+.CallMe-white-popup-input label {
+    color: #babfc2;
+    font-size: 19px;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    width: 100%;
+    top: -3px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    font-style: italic;
+}
+
+.CallMe-white-popup-input input:focus ~ label,
+.CallMe-white-popup-input input:valid ~ label {
+    top: -18px;
+    font-size: 14px;
+    color: #295FDE;
+}
+
+.CallMe-white-popup-input span {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.CallMe-white-popup-input span:before,
+.CallMe-white-popup-input span:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #295FDE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.CallMe-white-popup-input span:before {
+    left: 50%;
+}
+.CallMe-white-popup-input span:after {
+    right: 50%;
+}
+
+/* showForm state */
+.CallMe-white-popup-input input:focus ~ span:before,
+.CallMe-white-popup-input input:focus ~ span:after {
+    width: 50%;
+}
+
+.CallMe-white-popup-input-group {
+    padding: 20px 20px 0 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CallMe-white-popup-input-last {
+    margin-bottom: 0;
+}
+
+.CallMe-white-popup-button {
+    background-color: #285FDE;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 0 0 25px 25px;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.CallMe-white-popup-button:hover {
+    background-color: #5079f1;
+}
+
+.CallMe-blue-popup {
+    border-radius: 25px;
+    background-color: rgb(88, 121, 252);
+    box-shadow: 0px 0px 50px 0px rgba(29, 34, 38, 0.05),0px 0px 15px 0px rgba(29, 34, 38, 0.05);
+    position: absolute;
+    left: -78px;
+    top: 110px;
+    width: 400px;
+    height: 146px;
+    z-index: 147;
+}
+
+.CallMe-blue-popup-text {
+    padding: 20px;
+    font-size: 19px;
+    font-style: italic;
+    line-height: 28px;
+    color: #fff;
+}
+
+.CallMe-blue-popup-button {
+    height: 50px;
+    border-radius: 0 0 25px 25px;
+    background: #285FDE;
+    font-size: 18px;
+    line-height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.CallMe-blue-popup-button-text {
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+}
+
+.CallMe-blue-popup-button-bar-container {
+    overflow: hidden;
+    width: 0;
+    z-index: 1;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: progress-width 5s linear;
+    animation-iteration-count: infinite;
+}
+
+.CallMe-blue-popup-button-bar {
+    height: 50px;
+    border-radius: 0 0 25px 25px;
+    background: #3A6AE7;
+    position: absolute;
+    width: 400px;
+}
+
+@keyframes progress-width {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 400px;
+    }
+}
